@@ -10,9 +10,15 @@ public class FlatSelection {
        int costB = B.totalSaving();
        int costC = C.totalSaving();
 
-        System.out.println("Total cost of Flat A is := "+costA) ;
-        System.out.println("Total cost of Flat B is := "+costB) ;
-        System.out.println("Total cost of Flat C is := "+costC) ;
-
+       if (costA < costB && costA < costC){
+            System.out.println("The Flat A is Budget Friendly Flat");
+        }
+        else if (costB < costC) {
+            System.out.println("The Flat B is Budget Friendly Flat");
+        }
+        else {
+            System.out.println("The Flat C is Budget Friendly Flat");
+        }
     }
 }
+
